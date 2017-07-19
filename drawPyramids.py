@@ -7,7 +7,7 @@ def Left():
         print("") #Skips to next line
         hashAmount = hashAmount + 1 #Adds a hash for every line
 def Right():
-    amount = int(input("How many?"))
+    amount = int(input("How many? "))
     hashAmount = amount
     hashAmount2 = 1
     hashAmount3 = hashAmount2
@@ -35,4 +35,11 @@ def Middle():
             print(" ", end = "")
         print("")
         lineNum = lineNum + 1
-Middle()
+#Choose which type
+answer = input("Left, right, or middle? ")
+if answer.lower() == "left":
+    Left()
+elif answer.lower() == "right":
+    Right()
+elif answer.lower() == "middle":
+    Middle()

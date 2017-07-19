@@ -6,7 +6,7 @@ def restart():
         replay = False
 
 replay = True
-while replay:
+while replay == True:
     answer = input("You are escaping from North Korea. Do you attempt to cross over the China-Korea border illegally, fly to China with a fake passport, or attempt to cross over the North-South Korean border? Type 1, 2, or 3. ")
     if answer == "1":
         answer = input("You sneak to the border under the cover of the night, and you realize that you must cross the river to get to China. Do you attempt the crossing? ")
