@@ -6,7 +6,15 @@ def primeFactor(n):
                 n = int(n / i)
                 largestFactor = n
                 i = 2
+        else:
+            break
     return largestFactor
+
+def isPrime(n):
+    for i in range(n - 1, 0, -1):
+        if n % i == 0:
+            return False
+    return True
 
 print(primeFactor(600851475143))
 #600851475143

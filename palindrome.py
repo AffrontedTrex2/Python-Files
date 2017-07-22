@@ -13,7 +13,7 @@ def palindrome(n):
     else:
         return False
 
-def largestPalindrome():
+def largestPalindrome(): #Problem is that 7 * 9 > 8 * 8 but we never get to 7, 9
     num = 999
     num2 = 999
     offSet = True
