@@ -122,10 +122,11 @@ def view(money):
     print("Press 'q' to quit.")
 
 def printDictionary(dictionary, place):
-    print("~~~~~~~~~~" + place + "~~~~~~~~~~")
+    print("~~~~~~~~~~~~" + place + "~~~~~~~~~~~~")
     for item, amount in dictionary.items():
-        print(item + "\t\tAmount: " + str(amount))
-    print("~~~~~~~~~~~~~~~~~~~~~~~~~~")
+        string = "{:<20}{:<20}".format(item, "Amount: " + str(amount))
+        print(string)
+    print("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
 
 def selling(money):
     printDictionary(pantry, "Pantry")
